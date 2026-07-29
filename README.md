@@ -51,13 +51,17 @@ Installable skills, each with its own resources: a Bavarian public-sector job se
 maintains a deduplicated database and scores ads against a candidate profile, and a cue-card
 generator that turns speaker notes into a printable duplex PDF deck.
 
-**[DataCite Metadata Generator](https://github.com/osmancakir/rdm_datacite_new)** · React, TypeScript
+**[DataCite Metadata Generator](https://github.com/osmancakir/rdm_datacite_new)** · React Router, TypeScript
 
-Research data management tooling for DataCite metadata and XML generation, built for LMU
-University Library and [in
-use](https://dhvlab.gwi.uni-muenchen.de/datacite-generator/) there. Three generations, from
-a single-file jQuery tool to a
-[React rewrite](https://rdm-datacite-new.fly.dev/).
+A guided form that turns DataCite's deeply conditional kernel-4 schema into valid XML, with
+round-trip editing of records that already exist. Constraint-aware validation, so the
+repository stops rejecting submissions for reasons nobody can see.
+[Live](https://rdm-datacite-new.fly.dev/).
+
+This is my own rebuild of a problem I worked on at LMU Munich, where I contributed 12
+commits to the University Library's
+[DataCite generator](https://github.com/UB-LMU/datacite-metadata-generator), which is
+[in production](https://dhvlab.gwi.uni-muenchen.de/datacite-generator/) at the UB.
 
 ### What I work with
 
