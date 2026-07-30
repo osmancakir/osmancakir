@@ -10,22 +10,36 @@ evaluated rather than demoed.
 
 ### Selected work
 
-**[libraryuniverse-news-desk](https://github.com/osmancakir/libraryuniverse-news-desk)** ·
+**[umbruchai-news-desk](https://github.com/osmancakir/umbruchai-news-desk)** ·
 LangGraph, TypeScript, OpenAI
 
-A multi-agent newsroom that runs in production. Five journalist personas research the day's
-stories in parallel and pitch; a human editor selects; the pipeline then writes each story
-at three CEFR levels of German, repairs its own schema and encoding errors through a
-validator agent, illustrates it, narrates it into three audio tracks, and publishes to a
-CMS. Parallel fan-out with state reducers, two human-in-the-loop interrupts, structured
-output captured through Zod-typed tools.
+A multi-agent newsroom that runs in production, and the backend of
+[umbruchai.com](https://umbruchai.com). Five journalist personas research the day's stories
+in parallel and pitch; a human editor selects; the pipeline then writes each story at three
+CEFR levels of German, repairs its own schema and encoding errors through a validator
+agent, illustrates it, narrates it into three audio tracks, and publishes to a CMS.
+Parallel fan-out with state reducers, two human-in-the-loop interrupts, structured output
+captured through Zod-typed tools. Open source, including all seven agent definitions.
+
+**[umbruchai](https://github.com/osmancakir/umbruchai)** · React Router 7, Cloudflare Workers, Sanity
+
+The publication the news desk writes into: [umbruchai.com](https://umbruchai.com), a German
+AI-journalism site now carrying 87 pieces across seven sections, each readable at three
+CEFR levels with audio at every level, and a page per agent author. Also open source, so
+the newsroom and the paper it prints can be read end to end.
+
+**[ai-political-leanings](https://github.com/osmancakir/ai-political-leanings)** · LLM evaluation, Python
+
+Six frontier models answered the Political Compass's 59 propositions in English, German and
+Turkish: 1,062 answers, no refusals, no missing cells, scored on both axes. Five of six sit
+left-libertarian in every language, and the prompt language moves the result
+systematically, with German producing the most libertarian score for all six models.
 
 **[Library Universe](https://libraryuniverse.com)** · React Router, TypeScript, Postgres, Sanity, fly.io
 
-The platform the news desk feeds: news for German learners, with graded reading levels,
-vocabulary flashcards on a spaced-repetition schedule, audio, and a book catalogue.
-249 commits, 225 TypeScript modules, Vitest and Playwright suites, GitHub Actions deploy.
-Source is private; the [reading
+A library for reading and learning: a book catalogue and vocabulary flashcards on a
+spaced-repetition schedule. 249 commits, 225 TypeScript modules, Vitest and Playwright
+suites, GitHub Actions deploy. Source is private; the [reading
 extension](https://github.com/osmancakir/libraryuniverse-reading-extension) that pairs with
 it is not.
 
@@ -68,7 +82,7 @@ commits to the University Library's
 - **AI** LangChain, LangGraph, RAG, pgvector, model evaluation, prompt and output-schema design, Claude Code, Codex
 - **Frontend** React, React Router, TypeScript, TanStack Query, Tailwind, Radix UI, Next.js, TensorFlow.js
 - **Backend** Node.js, Postgres, SQLite and LiteFS, Python, Sanity, AWS S3 and RDS
-- **Ops** Docker, fly.io, AWS EC2 and CloudFront, GitHub Actions, Linux
+- **Ops** Docker, fly.io, Cloudflare Workers, AWS EC2 and CloudFront, GitHub Actions, Linux
 - **Testing** Vitest, Playwright, MSW, Sentry
 
 ### Also
