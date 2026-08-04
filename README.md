@@ -28,6 +28,22 @@ AI-journalism site now carrying 87 pieces across seven sections, each readable a
 CEFR levels with audio at every level, and a page per agent author. Also open source, so
 the newsroom and the paper it prints can be read end to end.
 
+**[candidgarden_web](https://github.com/osmancakir/candidgarden_web)** · React Router 7, pgvector, three.js, Cloudflare Workers *(LMU Munich, with Prof. Dr. Kohle)*
+
+[candidgarden.com](https://candidgarden.com), an institute for art re-search, now open
+source. 54,497 artworks from the ARTigo corpus, processed in three languages through hybrid
+human-AI verification, each read at Erwin Panofsky's three levels of meaning. The readings
+stay labelled provisional and confidence reports observed agreement rather than truth.
+Search embeds the query with `bge-m3` and ranks it against 1,024-dimensional vectors in
+Postgres with pgvector, so a conceptual question finds work that shares no keyword with it.
+
+The [Atlas](https://candidgarden.com/archive/atlas) puts 89,800 of those readings into one
+WebGL point cloud. Its UMAP layout is fitted offline and never moves, so a search lights up
+matches inside a fixed space instead of rearranging it, and two searches stay comparable; a
+custom binary format ships the geometry in 1.6 MB rather than 8 MB of JSON. Server-rendered
+on Cloudflare Workers over Hyperdrive to a private RDS, with Vitest, Playwright and both
+runtimes built in CI.
+
 **[ai-political-leanings](https://github.com/osmancakir/ai-political-leanings)** · LLM evaluation, Python
 
 Six frontier models answered the Political Compass's 59 propositions in English, German and
@@ -51,13 +67,6 @@ responses, and bias control conditions, plus a research interface for curators t
 the output. The point was to find out which model an art-historical institution should
 actually trust, not to assume one.
 
-**[candidgarden.com](https://candidgarden.com)** · vector search, human-AI verification *(LMU Munich, with Prof. Dr. Kohle)*
-
-54,000 artworks processed in three languages through hybrid human-AI verification
-protocols, producing iconographic metadata broader than the source catalogues carried.
-On top of it, a semantic search interface over vector embeddings with a query-decomposition
-agent, so a conceptual question finds work that shares no keyword with it.
-
 **[agent-skills](https://github.com/osmancakir/agent-skills)** · Agent Skills for Claude Code and Codex
 
 Installable skills, each with its own resources: a Bavarian public-sector job search that
@@ -78,8 +87,8 @@ commits to the University Library's
 
 ### What I work with
 
-- **AI** LangChain, LangGraph, RAG, pgvector, model evaluation, prompt and output-schema design, Claude Code, Codex
-- **Frontend** React, React Router, TypeScript, TanStack Query, Tailwind, Radix UI, Next.js, TensorFlow.js
+- **AI** LangChain, LangGraph, RAG, pgvector, embeddings and UMAP projection, model evaluation, prompt and output-schema design, Claude Code, Codex
+- **Frontend** React, React Router, TypeScript, TanStack Query, Tailwind, Radix UI, Next.js, three.js and WebGL, TensorFlow.js
 - **Backend** Node.js, Postgres, SQLite and LiteFS, Python, Sanity, AWS S3 and RDS
 - **Ops** Docker, fly.io, Cloudflare Workers, AWS EC2 and CloudFront, GitHub Actions, Linux
 - **Testing** Vitest, Playwright, MSW, Sentry
