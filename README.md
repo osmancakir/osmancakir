@@ -57,7 +57,6 @@ actually trust, not to assume one.
 protocols, producing iconographic metadata broader than the source catalogues carried.
 On top of it, a semantic search interface over vector embeddings with a query-decomposition
 agent, so a conceptual question finds work that shares no keyword with it.
-Coding Da Vinci Süd award for the technically most demanding project.
 
 **[agent-skills](https://github.com/osmancakir/agent-skills)** · Agent Skills for Claude Code and Codex
 
