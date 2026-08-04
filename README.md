@@ -30,10 +30,11 @@ the newsroom and the paper it prints can be read end to end.
 
 **[candidgarden_web](https://github.com/osmancakir/candidgarden_web)** · React Router 7, pgvector, three.js, Cloudflare Workers *(LMU Munich, with Prof. Dr. Kohle)*
 
-[candidgarden.com](https://candidgarden.com), an institute for art re-search, now open
-source. 54,497 artworks from the ARTigo corpus, processed in three languages through hybrid
-human-AI verification, each read at Erwin Panofsky's three levels of meaning. The readings
-stay labelled provisional and confidence reports observed agreement rather than truth.
+An institute for art re-search, now open source. Deployed at
+[candidgarden.com](https://candidgarden.com), it holds 54,497 artworks from the ARTigo
+corpus, processed in three languages through hybrid human-AI verification, each read at
+Erwin Panofsky's three levels of meaning. The readings stay labelled provisional and
+confidence reports observed agreement rather than truth.
 Search embeds the query with `bge-m3` and ranks it against 1,024-dimensional vectors in
 Postgres with pgvector, so a conceptual question finds work that shares no keyword with it.
 
