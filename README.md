@@ -55,10 +55,9 @@ systematically, with German producing the most libertarian score for all six mod
 **[Library Universe](https://libraryuniverse.com)** · React Router, TypeScript, Postgres, Sanity, fly.io
 
 A library for reading and learning: a book catalogue and vocabulary flashcards on a
-spaced-repetition schedule. 249 commits, 225 TypeScript modules, Vitest and Playwright
-suites, GitHub Actions deploy. Source is private; the [reading
+spaced-repetition schedule. The [reading
 extension](https://github.com/osmancakir/libraryuniverse-reading-extension) that pairs with
-it is not.
+it is here.
 
 **Städel Museum** · multimodal LLM evaluation *(freelance, 2026)*
 
@@ -68,11 +67,6 @@ responses, and bias control conditions, plus a research interface for curators t
 the output. The point was to find out which model an art-historical institution should
 actually trust, not to assume one.
 
-**[agent-skills](https://github.com/osmancakir/agent-skills)** · Agent Skills for Claude Code and Codex
-
-Installable skills, each with its own resources: a Bavarian public-sector job search that
-maintains a deduplicated database and scores ads against a candidate profile, and a cue-card
-generator that turns speaker notes into a printable duplex PDF deck.
 
 **[DataCite Metadata Generator](https://github.com/osmancakir/rdm_datacite_new)** · React Router, TypeScript
 
