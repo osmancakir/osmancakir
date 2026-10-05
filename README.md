@@ -1,12 +1,9 @@
 ## Osman Cakir
 
 AI engineer in Munich. I build multi-agent systems and the products around them, which
-means I also write the frontend, the schema, the tests and the deploy pipeline. Most of my
-work sits where language models meet real collections: news, books, museum archives,
-research metadata.
+means I also write the frontend, the schema, the tests and the deploy pipeline. 
 
-Before software I studied economics and art history. That is why my agents tend to be
-evaluated rather than demoed.
+Before software I studied economics and art history. 
 
 ### Selected work
 
